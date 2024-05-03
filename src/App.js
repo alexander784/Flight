@@ -1,9 +1,10 @@
 import './App.css';
+import Header from './components/Header';
 
 function App() {
   return (
     <>
-    <nav>Navbar</nav>
+    <Header />
     <section>
       <div>Booking</div>
       <div>Table</div>
