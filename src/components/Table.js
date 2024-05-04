@@ -1,10 +1,16 @@
 import { useDispatch, useSelector } from "react-redux";
 import { TiDelete } from "react-icons/ti";
+import { deleteBooking } from "../redux/action";
 
 
 const Table = () => {
     const data = useSelector((state) => state.data);
     const dispatch = useDispatch();
+
+    const handleDelete = (e) => {
+        const id = parseInt(e.currentTarget.id)
+        dispatch(deleteBooking(id));
+    }
     console.log(data)
   return (
     <>
@@ -34,7 +40,7 @@ const Table = () => {
                             <td>{data.date}</td>
                             <td>{data.guest}</td>
                             <td>{data.ticketclassName}</td>
-                            <td><button id={`${data.id}`}  
+                            <td><button id={`${data.id}`}onClick={(e) => handleDelete(e)}  
                             className="btn-xs bg-red-500 text-white"><TiDelete /></button></td>
                         </tr>
 
