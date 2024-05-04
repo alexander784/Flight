@@ -1,7 +1,15 @@
 import { useState } from "react";
 import { FaPlus } from "react-icons/fa";
+import { useDispatch, useSelector } from "react-redux";
 
 const Booking = () => {
+    const data = useSelector(( state ) => state.data);
+    // dispatch actions to Redux store
+    const dispatch = useDispatch();
+    const size = data.length;
+
+
+
     const [bookingData, setbookingData] = useState({});
 
     const handleChange = (e) => {
