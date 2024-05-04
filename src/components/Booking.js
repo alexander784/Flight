@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { FaPlus } from "react-icons/fa";
 import { useDispatch, useSelector } from "react-redux";
+import { makeBooking } from "../redux/action";
 
 const Booking = () => {
     const data = useSelector(( state ) => state.data);
@@ -22,7 +23,13 @@ const Booking = () => {
     }
     const handleBook = (e) => {
         e.preventDefault();
-        console.log(e.target.value);
+        // console.log(e.target.value);
+        if (Object.keys(bookingData).length === 5) {
+            dispatch(makeBooking({...bookingData,id:size * 1}))
+        } else {
+            alert("please select data properly!")
+        }
+
     }
     console.log(bookingData);
 
