@@ -31,4 +31,4 @@ const bookingReducer = (state = initialState,action) => {
 
 }
 
-export default bookingReducer
+export default bookingReducer;

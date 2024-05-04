@@ -1,7 +1,7 @@
-import { createStoreHook } from "react-redux";
+import { createStore } from "react-redux";
+import bookingReducer from "./bookingreducer";
 
 
-// ##TODO ,Pass a reducer function here
-const store = createStore()
+const store = createStore(bookingReducer);
 
 export default store;
