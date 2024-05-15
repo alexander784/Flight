@@ -29,9 +29,9 @@ State Management:Redux,
  ## Usage
  1.Homepage : The landing page where users can see a form to book a flight <br>
  2. Booking Form:
-        `Select the "From" location(departure).<br>`
-        `Select the "To" location (arrival)<br>`
-        `Button to add the selected flights on the display form.<br>`
+        `Select the "From" location(departure).` <br>
+        `Select the "To" location (arrival)` <br>
+        `Button to add the selected flights on the display form.`<br
 
 ## Author
 Nyaga Alexander
