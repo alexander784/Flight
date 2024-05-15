@@ -17,21 +17,21 @@ State Management:Redux,
 
 ## Installation
 
-1. Clone the Repository:
-`git clone:https://github.com/alexander784/Flight.git`
+1. Clone the Repository: <br>
+`git clone:https://github.com/alexander784/Flight.git`<br>
  `cd Flight`
- 2. INstall dependecies
-  `npm install`
-3. Start development server:
+ 2. Install dependecies<br>
+  `npm install`<br>
+3. Start development server:<br>
  `npm start`
 
 
  ## Usage
- 1.Homepage : The landing page where users can see a form to book a flight
+ 1.Homepage : The landing page where users can see a form to book a flight <br>
  2. Booking Form:
-        Select the "From" location(departure).<br>
-        select the "To" location (arrival)<br>
-         Button to add the selected flights on the display form.<br>
+        `Select the "From" location(departure).<br>`
+        `Select the "To" location (arrival)<br>`
+        `Button to add the selected flights on the display form.<br>`
 
 ## Author
 Nyaga Alexander
